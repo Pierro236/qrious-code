@@ -1,40 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Qrious Code
 
-## Getting Started
+Un générateur de QR codes personnalisés créé avec Next.js, TypeScript et Tailwind CSS.
 
-First, run the development server:
+## Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Génération de QR codes** : Entrez une URL ou un message pour générer un QR code
+- **Personnalisation des couleurs** : Choisissez la couleur du QR code et du fond
+- **Intégration de logo** : Ajoutez votre logo au centre du QR code
+- **Aperçu en temps réel** : Voir les modifications instantanément
+- **Export PNG** : Téléchargez votre QR code en format PNG
+- **Interface responsive** : Fonctionne sur tous les appareils
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies utilisées
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **Next.js** : Framework React pour le développement
+- **TypeScript** : Typage statique pour une meilleure qualité de code
+- **Tailwind CSS** : Framework CSS utilitaire pour le style
+- **qrcode.react** : Génération de QR codes
+- **react-color** : Sélecteurs de couleur
+- **html-to-image** : Export en PNG
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+1. Clonez le repository
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+3. Lancez le serveur de développement :
+   ```bash
+   npm run dev
+   ```
+4. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Utilisation
 
-## Learn More
+1. Entrez une URL ou un message dans le champ texte
+2. Personnalisez les couleurs du QR code et du fond
+3. Optionnellement, ajoutez un logo en uploadant une image
+4. Vérifiez l'aperçu en temps réel
+5. Cliquez sur "Télécharger QR Code" pour sauvegarder en PNG
 
-To learn more about Next.js, take a look at the following resources:
+## Scripts disponibles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- `npm run dev` : Lance le serveur de développement
+- `npm run build` : Construit l'application pour la production
+- `npm run start` : Lance l'application en mode production
+- `npm run lint` : Vérifie le code avec ESLint
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Licence
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Ce projet est sous licence MIT.
